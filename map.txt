@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_83a44b76e4dd635a4b599929fbe85820 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_83a44b76e4dd635a4b599929fbe85820" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_83a44b76e4dd635a4b599929fbe85820 = L.map(
+                "map_83a44b76e4dd635a4b599929fbe85820",
+                {
+                    center: [37.7749, -122.4194],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_72c39492904660c39f64366f85bdf308 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_72c39492904660c39f64366f85bdf308.addTo(map_83a44b76e4dd635a4b599929fbe85820);
+        
+    
+            var marker_e3ac7f5ecc99e86164fa5a1fe06a64f4 = L.marker(
+                [37.7749, -122.4194],
+                {
+}
+            ).addTo(map_83a44b76e4dd635a4b599929fbe85820);
+        
+    
+        var popup_d4c365f502df5b2556b9b0e885542ca1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88da607406889efe4842e4757b493134 = $(`<div id="html_88da607406889efe4842e4757b493134" style="width: 100.0%; height: 100.0%;">Affected Area 1</div>`)[0];
+                popup_d4c365f502df5b2556b9b0e885542ca1.setContent(html_88da607406889efe4842e4757b493134);
+            
+        
+
+        marker_e3ac7f5ecc99e86164fa5a1fe06a64f4.bindPopup(popup_d4c365f502df5b2556b9b0e885542ca1)
+        ;
+
+        
+    
+    
+            var marker_5d82b8b37120483074f1cf0455485078 = L.marker(
+                [37.7849, -122.4094],
+                {
+}
+            ).addTo(map_83a44b76e4dd635a4b599929fbe85820);
+        
+    
+        var popup_dbed683bd68ca72cce6ab2625b491cf9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bad93a74f87ced24b60c03173f941548 = $(`<div id="html_bad93a74f87ced24b60c03173f941548" style="width: 100.0%; height: 100.0%;">Affected Area 2</div>`)[0];
+                popup_dbed683bd68ca72cce6ab2625b491cf9.setContent(html_bad93a74f87ced24b60c03173f941548);
+            
+        
+
+        marker_5d82b8b37120483074f1cf0455485078.bindPopup(popup_dbed683bd68ca72cce6ab2625b491cf9)
+        ;
+
+        
+    
+</script>
+</html>
